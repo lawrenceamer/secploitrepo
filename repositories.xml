@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories version="1.0">
 <repo priority="50" status="unofficial">
-	<name>secploit</name>
+	<name>secploitrepo</name>
 	<description>Secploit OS  profile and Packages</description>
 	<homepage>https://secploit.com/tools</homepage>
 	<owner>
