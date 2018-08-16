@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+<repo priority="50" status="unofficial">
+	<name>joomscan</name>
+	<description>Secploit OS  profile and Packages</description>
+	<homepage>https://secploit.com/tools</homepage>
+	<owner>
+		<email>admin@secploit.com</email>
+		<name>secploit, Inc</name>
+	</owner>
+	<source type="git">git://github.com/rezasp/joomscan.git</source>
+	<feed>https://github.com/rezasp/commits/master.atom</feed>
+</repo>
+</repositories>
