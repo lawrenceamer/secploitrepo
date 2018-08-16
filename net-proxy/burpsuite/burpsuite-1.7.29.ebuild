@@ -5,11 +5,9 @@ EAPI=6
 
 MY_P="burpsuite_free_v${PV}.jar"
 
-DESCRIPTION="Interactive proxy for attacking and debugging web 
-applications"
+DESCRIPTION="Interactive proxy for attacking and debugging web applications"
 HOMEPAGE="https://portswigger.net/burp/"
-SRC_URI="https://portswigger.net/burp/releases/download?productid=100&version=${PV}&type=jar 
--> ${MY_P}"
+SRC_URI="https://portswigger.net/burp/releases/download?productid=100&version=${PV}&type=jar -> ${MY_P}"
 
 LICENSE="BURP"
 SLOT="0"
@@ -30,7 +28,6 @@ src_install() {
 	insinto /opt/"${PN}"
 	doins "${MY_P}"
 
-	echo -e "#!/bin/sh\njava -jar /opt/${PN}/${MY_P} 
->/dev/null 2>&1 &\n" > "${PN}"
+	echo -e "#!/bin/sh\njava -jar /opt/${PN}/${MY_P} >/dev/null 2>&1 &\n" > "${PN}"
 	dobin ${PN}
 }
