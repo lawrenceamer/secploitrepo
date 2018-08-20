@@ -1,5 +1,5 @@
-# secploitrepo
-Secploit Linux System repository for most wanted tools to add directly to your own system . 
+# secploit Overlay Repository 
+Secploit project started first established to shade lights on the mosted publicly disclosed exploitts,vulnerabilities from trusted sources .our second idea was to develope a Red Teaming Linux Distru for experts 
 
 # notice 
 all tools in this overlay are covered from trusted sources , in case for damage , misuse secploit community is not responsible for that ,
