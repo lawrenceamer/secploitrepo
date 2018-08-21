@@ -8,7 +8,7 @@ MY_P="DirBuster-${PV}.jar"
 DESCRIPTION=""
 HOMEPAGE=""
 SLOT="0"
-SRC_URI="http://downloads.sourceforge.net/dirbuster/DirBuster-0.12.zip?use_mirror=osdn"
+SRC_URI="http://downloads.sourceforge.net/dirbuster/DirBuster-0.12.zip"
 KEYWORDS="amd64 x86"
 IUSE=""
 
