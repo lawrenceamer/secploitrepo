@@ -27,7 +27,7 @@ parted -s $hd name 3 rootfs
 parted -s $hd set 2 boot on 
 ##end of partion 
 ##formating 
-mkmkfs.ext2 $hd$ext2 
+mkfs.ext2 $hd$ext2 
 mkfs.ext4 $hd$ext4
 ##end of formating 
 ##mouting Drive 
