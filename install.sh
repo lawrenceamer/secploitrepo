@@ -24,5 +24,20 @@ parted -s $hd name 2 boot
 parted -s $hd mkpart primary 643 -- -1 
 parted -s $hd name 3 rootfs
 parted -s $hd set 2 boot on 
-
 ##end of partion 
+##formating 
+mkmkfs.ext2 $hd2 
+mkfs.ext4 $hd3
+##end of formating 
+##mouting Drive 
+mount $hd3 /mnt/gentoo 
+##end of mounting 
+##installing proccess 
+tar xvfj /mnt/cdrom/stages/secploit.tar.gz -C /mnt/gentoo
+
+echo "Successfully installed , please run chroot script " 
+##end of install step 
+
+
+##preparing the mount of sda3 
+
