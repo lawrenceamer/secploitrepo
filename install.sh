@@ -3,7 +3,8 @@
 ##Secploit OS , Gentoo Kernal 
 
 hd=/dev/sda 
-
+ext2=2
+ext4=3
 parted -s $hd mklabel gpt &> /dev/null 
 
 ##remove previouse partition 
@@ -26,11 +27,11 @@ parted -s $hd name 3 rootfs
 parted -s $hd set 2 boot on 
 ##end of partion 
 ##formating 
-mkmkfs.ext2 $hd2 
-mkfs.ext4 $hd3
+mkmkfs.ext2 $hd$ext2 
+mkfs.ext4 $hd$ext4
 ##end of formating 
 ##mouting Drive 
-mount $hd3 /mnt/gentoo 
+mount $hd$ext4 /mnt/gentoo 
 ##end of mounting 
 ##installing proccess 
 tar xvfj /mnt/cdrom/stages/secploit.tar.gz -C /mnt/gentoo
