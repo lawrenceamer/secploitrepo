@@ -38,7 +38,12 @@ tar xvfj /mnt/cdrom/stages/secploit.tar.gz -C /mnt/gentoo
 
 echo "Successfully installed , please run chroot script " 
 ##end of install step 
+mount --types proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys
+mount --rbind /dev /mnt/gentoo/dev
+echo "chrooting ...."
+chroot /mnt/gentoo /bin/bash 
+source /etc/profile
+export PS1="(chroot) ${PS1}"
 
-
-##preparing the mount of sda3 
 
