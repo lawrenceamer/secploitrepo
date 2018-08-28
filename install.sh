@@ -34,8 +34,9 @@ mkfs.ext4 $hd$ext4
 mount $hd$ext4 /mnt/gentoo 
 ##end of mounting 
 ##installing proccess 
-tar xvfj /mnt/cdrom/stages/secploit.tar.gz -C /mnt/gentoo
-
+emerge --ask pv
+#tar xvfj /mnt/cdrom/stages/secploit.tar.gz -C /mnt/gentoo
+pv /mnt/cdrom/stages/secploit.tar.gz | tar xvfj - -C /mnt/gentoo
 echo "Successfully installed , please run chroot script " 
 ##end of install step 
 mount --types proc /proc /mnt/gentoo/proc
