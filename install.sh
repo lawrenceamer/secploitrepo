@@ -35,8 +35,8 @@ mount $hd$ext4 /mnt/gentoo
 ##end of mounting 
 ##installing proccess 
 emerge --ask pv
-#tar xvfj /mnt/cdrom/stages/secploit.tar.gz -C /mnt/gentoo
-pv /mnt/cdrom/stages/secploit.tar.gz | tar xvfj - -C /mnt/gentoo
+tar xvfj /mnt/cdrom/stages/secploit.tar.gz -C /mnt/gentoo
+#pv /mnt/cdrom/stages/secploit.tar.gz | tar xvfj - -C /mnt/gentoo
 echo "Successfully installed , please run chroot script " 
 ##end of install step 
 mount --types proc /proc /mnt/gentoo/proc
