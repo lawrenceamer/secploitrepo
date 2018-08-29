@@ -1,0 +1,52 @@
+installation of stage4 Secploit OS . 
+
+1. first you have to get the desired device you want to install .
+fdisk -l 
+
+2. in our case , VMWARE , VB , /dev/sda is the most common  .
+
+3. start the process of partion by executing the following commands : 
+parted -s /dev/sda unit mib 
+parted -s /dev/sda mkpart primary 1 3 
+parted -s /dev/sda name 1 grub 
+parted -s /dev/sda set 1 bios_grub on 
+
+parted -s /dev/sda mkpart primary 3 131
+parted -s /dev/sda name 2 boot 
+parted -s /dev/sda mkpart primary 643 -- -1 
+parted -s /dev/sda name 3 rootfs
+parted -s /dev/sda set 2 boot on 
+
+4. we have then to start formatting these disks : 
+
+mkfs.ext2 /dev/sda2 
+mkfs.ext4 /dev/sda3
+
+5. we are ready now to start mounting : 
+mount /dev/sda3 /mnt/gentoo 
+
+6. start the proccess of installation 
+tar xvfj /mnt/cdrom/stages/secploit.tar.gz2 -C /mnt/gentoo
+
+7. when finish installation , we have to chroot the environment 
+
+mount --types proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys
+mount --rbind /dev /mnt/gentoo/dev
+
+8. execute these also : 
+
+chroot /mnt/gentoo /bin/bash 
+source /etc/profile
+export PS1="(chroot) ${PS1}"
+
+9. you are now inside the environment , let's make the final step to setup our grub . 
+
+grub-install /dev/sda 
+grub-mkconfig -o /boot/grub/grub.cfg 
+
+10 . unmount and exit 
+umount -l /dev/sda3 
+reboot .
+
+11. enjouy 
