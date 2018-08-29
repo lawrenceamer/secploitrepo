@@ -6,6 +6,7 @@ fdisk -l
 2. in our case , VMWARE , VB , /dev/sda is the most common  .
 
 3. start the process of partion by executing the following commands : 
+parted -s /dev/sda mklabel gpt
 parted -s /dev/sda unit mib 
 parted -s /dev/sda mkpart primary 1 3 
 parted -s /dev/sda name 1 grub 
