@@ -27,7 +27,8 @@ mkfs.ext4 /dev/sda3
 mount /dev/sda3 /mnt/gentoo 
 
 6. start the proccess of installation 
-tar xvfj /mnt/cdrom/stages/secploit.tar.gz2 -C /mnt/gentoo
+tar xpf /mnt/cdrom/stages/secploit.tar.gz2 --xattrs-include='*.*' --numeric-owner -C /mnt/gentoo
+
 
 7. when finish installation , we have to chroot the environment 
 
