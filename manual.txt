@@ -5,7 +5,7 @@ fdisk -l
 
 2. in our case , VMWARE , VB , /dev/sda is the most common  .
 
-3. start the process of partion by executing the following commands : 
+### Step -3. start the process of partion by executing the following commands : 
 parted -s /dev/sda mklabel gpt
 parted -s /dev/sda unit mib 
 parted -s /dev/sda mkpart primary 1 3 
@@ -18,7 +18,8 @@ parted -s /dev/sda mkpart primary 643 -- -1
 parted -s /dev/sda name 3 rootfs
 parted -s /dev/sda set 2 boot on 
 
-4. we have then to start formatting these disks : 
+### Step-4. 
+we have then to start formatting these disks : 
 
 mkfs.ext2 /dev/sda2 
 mkfs.ext4 /dev/sda3
