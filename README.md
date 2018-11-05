@@ -17,7 +17,16 @@ https://secploit.com/dl
 https://sourceforge.net/projects/secploit/files/VM-image/newsecploit.7z/download
 
 ### Update overlay 
-upsys
+1.first you have to add secploit categories into portage to accept these 
+<code> nano /etc/portage/categories </code> 
+<pre>
+net-enum
+exploitation
+dev-tools
+</pre>
+2. run "sysup" command 
+
+3. you can now use our repo
 
 
 ### Notice 
