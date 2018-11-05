@@ -16,7 +16,7 @@ https://sourceforge.net/projects/secploit/files/VM-image/newsecploit.7z/download
 
 ### Update overlay 
 upsys
-[Don't forget to unmask while changes made ] 
+
 
 ### Notice 
 all tools in this overlay are covered from trusted sources , in case for damage , misuse secploit community is not responsible for that ,
