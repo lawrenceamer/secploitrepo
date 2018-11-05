@@ -1,6 +1,14 @@
 ### Secploit Overlay Repository 
 Secploit is a GNU/Linux distribution based on Gentoo . developed by Lawrence Amer , focused on Penetration Testing , Red Teaming Stimulation Attacks operations . 
 It includes a full portable laboratory for security & red Team Experts
+### project URL : 
+https://sourceforge.net/projects/secploit/
+
+### Gentoo stage4 
+https://secploit.com/dl
+
+### Secploit VM 
+https://sourceforge.net/projects/secploit/files/VM-image/newsecploit.7z/download
 
 ### update overlay 
 upsys
