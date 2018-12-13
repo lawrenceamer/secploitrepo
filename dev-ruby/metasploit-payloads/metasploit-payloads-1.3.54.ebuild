@@ -13,6 +13,7 @@ inherit ruby-fakegem
 
 DESCRIPTION="Compiled binaries for Metasploit's Meterpreter"
 HOMEPAGE="https://rubygems.org/gems/metasploit-payloads"
+SRC_URI="https://rubygems.org/downloads/metasploit-payloads-1.3.54.gem"
 
 LICENSE="BSD"
 
