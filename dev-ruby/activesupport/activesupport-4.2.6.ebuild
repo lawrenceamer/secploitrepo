@@ -18,7 +18,7 @@ inherit ruby-fakegem versionator
 
 DESCRIPTION="Utility Classes and Extension to the Standard Library"
 HOMEPAGE="https://github.com/rails/rails"
-SRC_URI="https://github.com/rails/rails/archive/v${PV}.tar.gz -> rails-${PV}.tgz"
+SRC_URI="https://rubygems.org/downloads/activerecord-4.2.6.gem"
 
 LICENSE="MIT"
 SLOT="$(get_version_component_range 1-2)"
