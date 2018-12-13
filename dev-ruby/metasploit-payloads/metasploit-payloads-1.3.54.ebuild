@@ -18,7 +18,7 @@ SRC_URI="https://rubygems.org/downloads/metasploit-payloads-1.3.54.gem"
 LICENSE="BSD"
 
 SLOT="${PV}"
-KEYWORDS="~amd64 ~arm ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE=""
 
 #no tests
